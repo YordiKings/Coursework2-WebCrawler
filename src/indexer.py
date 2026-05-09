@@ -14,7 +14,7 @@ class Indexer:
         self.index.clear()
         for url, text in pages_data.items():
             # Extract words using regex (alphanumeric sequences)
-            words = re.findall(r'\b\w+\b', text.lower())
+            words = re.findall(r"\b\w+(?:'\w+)?\b", text.lower())
             
             for position, word in enumerate(words):
                 self.index[word][url].append(position)
