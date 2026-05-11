@@ -24,7 +24,7 @@ cd Coursework2-WebCrawler
 python -m venv venv
 venv\Scripts\activate
 ```
-3. Insstall the required dependencies using pip:
+3. Install the required dependencies using pip:
 ```
 pip install -r requirements.txt
 ```
@@ -43,11 +43,14 @@ Once the shell is running, you can use the following four commands:
 
 Instructs the search tool to crawl the website, build the inverted index, and save it to the file system (data/index.json).
 Note: Because of the required 6-second politeness window between page requests, this process will take about a minute to complete.
+
 ![alt text](image.png)
 ![alt text](image-1.png)
+
 2. load
 
 Loads the previously generated index from the file system into memory. This allows you to search without having to recrawl the website every time you start the program.
+
 ![alt text](image-2.png)
 
 3. print <word>
