@@ -24,7 +24,7 @@ cd Coursework2-WebCrawler
 python -m venv venv
 venv\Scripts\activate
 ```
-3. Insstall the required dependencies using pip:
+3. Install the required dependencies using pip:
 ```
 pip install -r requirements.txt
 ```
